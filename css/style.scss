@@ -54,10 +54,24 @@
   cursor: pointer;
 }
 
+.description {
+  text-align: left;
+  line-height: 30px;
+  color: #505f98;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+}
+
 .intro__main {
   margin-top: 255px;
 
   .main__heading {
+    margin-bottom: 20px;
     float: left;
     font-size: 50px;
     font-weight: 500;
@@ -67,15 +81,7 @@
   }
 
   .main__description {
-    text-align: left;
     font-size: 18px;
-    line-height: 30px;
-    color: #505f98;
-  }
-
-  .main__description:first-child {
-    margin-top: 25px;
-    margin-bottom: 20px;
   }
 
   .main__button {
@@ -97,5 +103,58 @@
     color: #091133;
     border: 2px solid #091133;
     background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.perk {
+  background-image: url(.././img/perk-background.jpg);
+  background-size: contain;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+
+  .perk__main {
+    margin-top: 160px;
+
+    .perk__description {
+      margin-top: 16px;
+      font-size: 16px;
+    }
+
+    .perk__benefit {
+      margin-top: 92px;
+      margin-bottom: 162px;
+    }
+
+    .benefit__title {
+      margin-top: 14px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #091133;
+    }
+
+    .benefit__description {
+      font-size: 12px;
+      line-height: 18px;
+      color: #5d6970;
+    }
+  }
+}
+
+.about {
+  margin-top: 122px;
+
+  .about__description {
+    float: right;
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .about_image {
+    display: flex;
+  }
+
+  .about__main:nth-child(2),
+  .about__main:last-child {
+    margin-top: 230px;
   }
 }
