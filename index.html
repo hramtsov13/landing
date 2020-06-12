@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <div class="intro">
-      <section class="container-md">
+    <section class="intro">
+      <div class="container">
         <header class="intro__header">
           <div class="row">
-            <nav class="col-sm-4 col-xs-4">
+            <nav class="col-sm-4 col-xs-4 header-margin">
               <ul class="header__nav">
                 <li>
                   <a href="#">Home</a>
@@ -22,10 +23,10 @@
                 </li>
               </ul>
             </nav>
-            <div class="col-sm-4 col-xs-4">
-              <h1 class="header__title">Landie</h1>
+            <div class="col-sm-4 col-xs-4 header-margin">
+              <h1 class="header__title header-margin">Landie</h1>
             </div>
-            <div class="col-sm-4 col-xs-4">
+            <div class="col-sm-4 col-xs-4 header-margin">
               <button class="header__button">Buy now</button>
             </div>
           </div>
@@ -44,51 +45,58 @@
               <br />mus. Donec quam felis, ultricies nec, pellentesque eu,
               pretium quis, sem. Nulla consequat massa quis enim.
             </p>
-            <button class="main__button">Purchase UI Kit</button>
-            <button class="main__button">Learn more</button>
+            <button class="main__button button">Purchase UI Kit</button>
+            <button class="main__button button">Learn more</button>
           </div>
         </article>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!--Second section-->
 
     <div class="perk">
       <section class="container-md">
         <article class="perk__main">
-          <div class="col-sm-6 col-xs-12">
-            <h3 class="perk__heading heading">
-              Light, Fast & Powerful Dick
-            </h3>
-            <p class="perk__description description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociisnatoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-            </p>
-            <p class="perk__description description">
-              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              quis, sem. Nulla consequat massa quis enim.
-            </p>
-            <div class="row">
-              <div class="col-sm-6 col-xs-4">
-                <div class="perk__benefit">
-                  <img src="./img/perk-icon.svg" alt="icon" />
-                  <h4 class="benefit__title">Title goes here</h4>
-                  <p class="benefit__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor.
-                  </p>
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 margin">
+              <h3 class="perk__heading heading">
+                Light, Fast & Powerful Dick
+              </h3>
+              <p class="perk__description description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociisnatoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+              </p>
+              <p class="perk__description description">
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
+              </p>
+              <div class="row">
+                <div class="col-sm-6 col-xs-4">
+                  <div class="perk__benefit">
+                    <img src="./img/perk-icon.svg" alt="icon" />
+                    <h4 class="benefit__title">Title goes here</h4>
+                    <p class="benefit__description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-4">
+                  <div class="perk__benefit">
+                    <img src="./img/perk-icon.svg" alt="icon" />
+                    <h4 class="benefit__title">Title goes here</h4>
+                    <p class="benefit__description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-xs-4">
-                <div class="perk__benefit">
-                  <img src="./img/perk-icon.svg" alt="icon" />
-                  <h4 class="benefit__title">Title goes here</h4>
-                  <p class="benefit__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor.
-                  </p>
-                </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="perk__image">
+                <img src="./img/perk-background.jpg" alt="perk image" />
               </div>
             </div>
           </div>
@@ -98,14 +106,14 @@
 
     <!--3rd section-->
 
-    <div class="about">
-      <section class="container-md">
+    <section class="about">
+      <div class="container-md">
         <article class="about__main">
           <div class="row">
             <div class="col-sm-7">
               <img class="about_image" src="./img/about-1.png" alt="Lotus" />
             </div>
-            <div class="col-sm-5 col-xs-12">
+            <div class="col-sm-5 col-xs-12 margin">
               <h3 class="about__heading heading">
                 I love u, ma bb
               </h3>
@@ -126,7 +134,7 @@
             <div class="col-sm-7">
               <img class="about_image" src="./img/about-2.png" alt="Lotus" />
             </div>
-            <div class="col-sm-5 col-xs-12">
+            <div class="col-sm-5 col-xs-12 margin">
               <h3 class="about__heading heading">
                 I love CSS and bootstrap
               </h3>
@@ -147,7 +155,7 @@
             <div class="col-sm-7">
               <img class="about_image" src="./img/about-3.png" alt="Lotus" />
             </div>
-            <div class="col-sm-5 col-xs-12">
+            <div class="col-sm-5 col-xs-12 margin">
               <h3 class="about__heading heading">
                 5 Dollars price
               </h3>
@@ -160,10 +168,90 @@
                 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
               </p>
+              <button class="about__button button">Buy Product</button>
             </div>
           </div>
         </article>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container-md">
+        <article class="offer__main">
+          <div class="row">
+            <div class="col-md-3 col-xs-1"></div>
+            <div class="col-md-6 col-xs-10">
+              <h3 class="offer__heading heading">A Price To Suit Everyone</h3>
+              <p class="offer__description description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+              </p>
+              <span class="offer__price">$40</span>
+              <span class="offer__item">UI Design Kit</span>
+              <span class="offer__slogan">See, One price. Simple.</span>
+              <button class="offer__button button">Buy Product</button>
+            </div>
+            <div class="col-md-3 col-xs-1"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container-md">
+        <div class="footer__top">
+          <div class="row">
+            <div class="col-md-5 col-xs-4">
+              <span class="footer__copyright">&copy 2019 UIX</span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+              <span class="footer__title">Landie Co.</span>
+            </div>
+            <div class="col-md-5 col-xs-4">
+              <button class="footer__button button">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="row">
+            <div class="col-md-6 col-xs-6">
+              <ul class="footer__nav">
+                <li>
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xs-6">
+              <ul class="footer__contacts">
+                <li>
+                  <a href="#">
+                    <img src="./img/footer/facebook.svg" alt="facebook icon" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./img/footer/linkedin.svg"
+                      alt="facebook icon"
+                    /> </a
+                  ><a href="#">
+                    <img
+                      src="./img/footer/twitter.svg"
+                      alt="facebook icon"
+                    /> </a
+                  ><a href="#">
+                    <img
+                      src="./img/footer/youtube.svg"
+                      alt="facebook icon"
+                    /> </a
+                  ><a href="#">
+                    <img src="./img/footer/Instagram.svg" alt="facebook icon" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

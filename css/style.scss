@@ -17,31 +17,36 @@
   padding-top: 18px;
 }
 
-.header__nav {
+.header-margin {
+  margin-top: auto;
+}
+
+.header__nav,
+.footer__nav,
+.footer__contacts {
   list-style: none;
   float: left;
 }
 
-.header__nav a {
+.header__nav a,
+.footer__nav a {
+  padding-right: 60px;
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   color: #505f98;
 }
 
-.header__nav a:nth-child(2) {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.header__title {
+.header__title,
+.footer__title {
   font-weight: 900;
   font-size: 26px;
   color: #37447e;
   text-align: center;
 }
 
-.header__button {
+.header__button,
+.footer__button {
   float: right;
   background-color: #111b47;
   color: #fff;
@@ -60,11 +65,28 @@
   color: #505f98;
 }
 
+.button {
+  padding: 5px 40px;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  background-color: #111b47;
+  cursor: pointer;
+}
+
 .heading {
   font-weight: 500;
   font-size: 36px;
   line-height: 48px;
   color: #091133;
+}
+
+.margin {
+  margin: auto;
 }
 
 .intro__main {
@@ -86,20 +108,10 @@
 
   .main__button {
     margin-top: 74px;
-    padding: 5px 40px;
-    border: none;
-    border-radius: 2px;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    font-weight: 500;
-    color: #fff;
-    background-color: #111b47;
-    cursor: pointer;
+    margin-right: 30px;
   }
 
   .main__button:last-child {
-    margin-left: 30px;
     color: #091133;
     border: 2px solid #091133;
     background-color: rgba(0, 0, 0, 0);
@@ -107,11 +119,6 @@
 }
 
 .perk {
-  background-image: url(.././img/perk-background.jpg);
-  background-size: contain;
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-
   .perk__main {
     margin-top: 160px;
 
@@ -143,18 +150,116 @@
 .about {
   margin-top: 122px;
 
+  .about_image {
+    display: flex;
+  }
+
   .about__description {
     float: right;
     margin-top: 16px;
     font-size: 16px;
   }
 
-  .about_image {
-    display: flex;
-  }
-
   .about__main:nth-child(2),
   .about__main:last-child {
     margin-top: 230px;
+  }
+
+  .about__main:last-child {
+    margin-bottom: 100px;
+  }
+
+  .about__button {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+}
+
+.offer {
+  padding-top: 205px;
+  padding-bottom: 205px;
+  background: url(.././img/offer-rectangle.png) no-repeat, url(.././img/offer-figure.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+
+  .offer__description {
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .offer__price {
+    display: block;
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #222f65;
+  }
+
+  .offer__item {
+    display: block;
+    font-size: 16px;
+    color: #222f65;
+  }
+
+  .offer__slogan {
+    display: block;
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5d6970;
+  }
+
+  .offer__button {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  background-color: #e7ecff;
+
+  .footer__top {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .footer__copyright {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #939ea4;
+    }
+
+    .footer__button {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .footer__bottom {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    border-top: 1px solid #cdd1d4;
+
+    .footer__nav {
+      float: left;
+    }
+
+    .footer__nav a {
+      color: #929ecc;
+    }
+
+    .footer__contacts {
+      float: right;
+    }
+
+    .footer__contacts a {
+      font-size: 0;
+      margin-left: 30px;
+    }
   }
 }
