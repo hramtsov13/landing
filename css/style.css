@@ -9,6 +9,74 @@ body {
   font-family: "roboto", serif;
 }
 
+.modal {
+  background: url(../img/popup-ipad.svg);
+  background-size: contain;
+  background-position: 110% 50%;
+  background-repeat: no-repeat;
+}
+
+.modal .modal__main {
+  margin-top: 50px;
+}
+
+.modal .modal__main .modal__description {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.modal .modal__main .modal__benefit {
+  margin-top: 92px;
+}
+
+.modal .modal__main .benefit__title {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+}
+
+.modal .modal__main .benefit__description {
+  font-size: 12px;
+  line-height: 18px;
+  color: #5d6970;
+}
+
+.modal .modal__main .modal__mockup {
+  margin-left: 150px;
+  margin-top: 150px;
+  padding-bottom: 90px;
+}
+
+.modal .modal__main .modal__mockup .mockup__heading {
+  font-weight: 500;
+  line-height: 40px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.modal .modal__main .modal__mockup .mockup__description {
+  font-weight: 300;
+  margin-top: 50px;
+  line-height: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.modal .modal__main .modal__mockup .mockup__button {
+  padding: 3px 40px;
+  margin-top: 90px;
+  background-color: #007bff;
+  font-size: 12px;
+}
+
+.modal .modal__main .modal__mockup .mockup__button:last-child {
+  margin-left: 20px;
+  background-color: #001022;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
 .intro {
   padding-bottom: 380px;
   background-image: url(.././img/intro-background.png);
