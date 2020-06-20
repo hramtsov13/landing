@@ -9,74 +9,6 @@ body {
   font-family: "roboto", serif;
 }
 
-.modal {
-  background: url(../img/popup-ipad.svg);
-  background-size: contain;
-  background-position: 110% 50%;
-  background-repeat: no-repeat;
-}
-
-.modal .modal__main {
-  margin-top: 50px;
-}
-
-.modal .modal__main .modal__description {
-  margin-top: 16px;
-  font-size: 16px;
-}
-
-.modal .modal__main .modal__benefit {
-  margin-top: 92px;
-}
-
-.modal .modal__main .benefit__title {
-  margin-top: 14px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #091133;
-}
-
-.modal .modal__main .benefit__description {
-  font-size: 12px;
-  line-height: 18px;
-  color: #5d6970;
-}
-
-.modal .modal__main .modal__mockup {
-  margin-left: 150px;
-  margin-top: 150px;
-  padding-bottom: 90px;
-}
-
-.modal .modal__main .modal__mockup .mockup__heading {
-  font-weight: 500;
-  line-height: 40px;
-  font-size: 30px;
-  color: #fff;
-}
-
-.modal .modal__main .modal__mockup .mockup__description {
-  font-weight: 300;
-  margin-top: 50px;
-  line-height: 25px;
-  font-size: 18px;
-  color: #fff;
-}
-
-.modal .modal__main .modal__mockup .mockup__button {
-  padding: 3px 40px;
-  margin-top: 90px;
-  background-color: #007bff;
-  font-size: 12px;
-}
-
-.modal .modal__main .modal__mockup .mockup__button:last-child {
-  margin-left: 20px;
-  background-color: #001022;
-  border: 1px solid #007bff;
-  color: #007bff;
-}
-
 .intro {
   padding-bottom: 380px;
   background-image: url(.././img/intro-background.png);
@@ -311,21 +243,19 @@ body {
 }
 
 .footer .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 35px;
   border-top: 1px solid #cdd1d4;
 }
 
-.footer .footer__bottom .footer__nav {
-  float: left;
-}
-
 .footer .footer__bottom .footer__nav a {
   color: #929ecc;
-}
-
-.footer .footer__bottom .footer__contacts {
-  float: right;
 }
 
 .footer .footer__bottom .footer__contacts a {
@@ -344,7 +274,7 @@ body {
   }
   .intro {
     padding-bottom: 75px;
-    background: #E7ECFF;
+    background: #e7ecff;
   }
   .intro .main__heading {
     font-size: 35px;
@@ -415,6 +345,202 @@ body {
   .footer .footer__bottom {
     padding-top: 10px;
     padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+  .footer .footer__bottom .footer__nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer__bottom .footer__contacts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*
+
+      
+
+      .modal__description {
+        margin-top: 16px;
+        font-size: 16px;
+      }
+
+      .modal__benefit {
+        margin-top: 92px;
+      }
+
+      .benefit__title {
+        margin-top: 14px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #091133;
+      }
+
+      .benefit__description {
+        font-size: 12px;
+        line-height: 18px;
+        color: #5d6970;
+      }
+
+      .modal__mockup {
+        margin-left: 150px;
+        margin-top: 150px;
+        padding-bottom: 90px;
+
+        .mockup__heading {
+          font-weight: 500;
+          line-height: 40px;
+          font-size: 30px;
+          color: #fff;
+        }
+
+        .mockup__description {
+          font-weight: 300;
+          margin-top: 50px;
+          line-height: 25px;
+          font-size: 18px;
+          color: #fff;
+        }
+
+        .mockup__button {
+          padding: 3px 40px;
+          margin-top: 90px;
+          background-color: #007bff;
+          font-size: 12px;
+        }
+
+        .mockup__button:last-child {
+          margin-left: 20px;
+          background-color: #001022;
+          border: 1px solid #007bff;
+          color: #007bff;
+        }
+      }
+    }
+  }
+}
+
+.modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+*/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  position: relative;
+  color: #000;
+  padding: 30px;
+  border: 10px solid #000000;
+  border-radius: 20px;
+  background: url(../img/popup-ipad.svg);
+  background-repeat: no-repeat;
+  background-position: 110% 50%;
+  background-size: contain;
+  background-color: #fff;
+}
+
+.popup__content .popup__close {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.popup__content .modal__description {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.popup__content .modal__benefit {
+  margin-top: 52px;
+}
+
+.popup__content .benefit__title {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+}
+
+.popup__content .benefit__description {
+  font-size: 12px;
+  line-height: 18px;
+  color: #5d6970;
+}
+
+.popup__content .modal__mockup {
+  margin-left: 150px;
+  margin-top: 70px;
+  padding-bottom: 90px;
+}
+
+.popup__content .modal__mockup .mockup__heading {
+  font-weight: 500;
+  line-height: 40px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.popup__content .modal__mockup .mockup__description {
+  font-weight: 300;
+  margin-top: 50px;
+  line-height: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.popup__content .modal__mockup .mockup__button {
+  padding: 3px 40px;
+  margin-top: 90px;
+  background-color: #007bff;
+  font-size: 12px;
+}
+
+.popup__content .modal__mockup .mockup__button:last-child {
+  margin-left: 20px;
+  background-color: #001022;
+  border: 1px solid #007bff;
+  color: #007bff;
 }
 /*# sourceMappingURL=style.css.map */
