@@ -443,6 +443,10 @@ body {
 //MEDIA
 
 @media (max-width: 767.98px) {
+  .header__nav a {
+    padding-right: 20px;
+  }
+
   .button {
     padding: 5px 20px;
     font-size: 14px;
@@ -459,6 +463,7 @@ body {
 
     .intro__main {
       margin-top: 80px;
+      margin-left: 15px;
     }
 
     .main__heading {
@@ -478,6 +483,7 @@ body {
   .perk {
     .perk__main {
       margin-top: 50px;
+      margin-left: 15px;
 
       .perk__benefit {
         margin-top: 50px;
@@ -580,7 +586,7 @@ body {
     }
 
     .modal__benefit {
-      margin-top: 10px;
+      margin-top: 30px;
     }
 
     .benefit__title {
@@ -615,7 +621,7 @@ body {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) {
   .intro {
     background-image: url(.././img/intro-background.png);
     background-size: contain;
