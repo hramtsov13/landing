@@ -16,10 +16,29 @@ body {
   background-repeat: no-repeat;
 }
 
-.intro__header {
-  padding-top: 18px;
+.intro__picture {
+  display: none;
 }
 
+.intro__header {
+  padding: 20px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+/*
+.intro__header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #515f98;
+}
+*/
 .header-margin {
   margin-top: auto;
 }
@@ -28,7 +47,10 @@ body {
 .footer__nav,
 .footer__contacts {
   list-style: none;
-  float: left;
+}
+
+.header__nav {
+  display: flex;
 }
 
 .header__nav a,
@@ -37,20 +59,22 @@ body {
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
-  color: #505f98;
+  color: #091133;
 }
 
 .header__title,
 .footer__title {
+  display: block;
+  text-align: center;
   font-weight: 900;
   font-size: 26px;
   color: #37447e;
-  text-align: center;
 }
 
 .header__button,
 .footer__button {
-  float: right;
+  display: flex;
+  margin-left: auto;
   background-color: #111b47;
   color: #fff;
   font-size: 12px;
@@ -60,6 +84,10 @@ body {
   border-radius: 2px;
   padding: 4px 40px;
   cursor: pointer;
+}
+
+.header__burger {
+  display: none;
 }
 
 .description {
@@ -235,6 +263,7 @@ body {
     }
 
     .footer__title {
+      display: block;
     }
 
     .footer__button {
@@ -274,6 +303,11 @@ body {
       display: block;
       font-size: 0;
       margin-left: 10px;
+    }
+
+    .footer__contacts a img:hover {
+      transform: scale(1.2);
+      transition: 0.3s;
     }
   }
 }
@@ -334,13 +368,18 @@ body {
   transform: translate(0px, -100%);
 
   .popup__close {
-    position: absolute;
-    left: 45px;
-    top: 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 25px;
+    display: inline-block;
+    transform: translate(-50%, 0);
+  }
+
+  .popup__close img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .popup__close img {
+    width: 30px;
+    height: 30px;
   }
 
   .modal__description {
@@ -368,7 +407,7 @@ body {
   .modal__mockup {
     margin-left: 150px;
     margin-top: 70px;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 
     .mockup__heading {
       font-weight: 500;
@@ -403,7 +442,7 @@ body {
 
 //MEDIA
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .button {
     padding: 5px 20px;
     font-size: 14px;
@@ -417,6 +456,10 @@ body {
   .intro {
     padding-bottom: 75px;
     background: #e7ecff;
+
+    .intro__main {
+      margin-top: 80px;
+    }
 
     .main__heading {
       font-size: 35px;
@@ -570,4 +613,79 @@ body {
       }
     }
   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .intro {
+    background-image: url(.././img/intro-background.png);
+    background-size: contain;
+    background-position: 150% 130%;
+    background-repeat: no-repeat;
+  }
+}
+
+/*
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  */
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url(https://fonts.gstatic.com/s/roboto/v15/Jzo62I39jc0gQRrbndN6nXYhjbSpvc47ee6xR_80Hnw.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfSZ2oysoEQEeKwjgmXLRnTc.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v15/QHD8zigcbDB8aPfIoaupKOvvDin1pK8aKteLpeZ5c0A.ttf) format("truetype");
 }
