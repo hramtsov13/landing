@@ -12,22 +12,22 @@ var gulp = require("gulp"),
 
 //build
 const buildMarkup = () => {
-  return gulp.src("app/*.html").pipe(gulp.dest("dist"));
+  return gulp.src("app/*.html").pipe(gulp.dest("docs"));
 };
 const buildScript = () => {
-  return gulp.src(["app/js/scripts.min.js"]).pipe(gulp.dest("dist/js"));
+  return gulp.src(["app/js/scripts.min.js"]).pipe(gulp.dest("docs/js"));
 };
 const buildStyle = () => {
-  return gulp.src(["app/css/style.min.css"]).pipe(gulp.dest("dist/css"));
+  return gulp.src(["app/css/style.min.css"]).pipe(gulp.dest("docs/css"));
 };
 const buildFonts = () => {
-  return gulp.src(["app/fonts/**/*"]).pipe(gulp.dest("dist/fonts"));
+  return gulp.src(["app/fonts/**/*"]).pipe(gulp.dest("docs/fonts"));
 };
 const buildImage = () => {
-  return gulp.src(["app/img/**/*"]).pipe(gulp.dest("dist/img"));
+  return gulp.src(["app/img/**/*"]).pipe(gulp.dest("docs/img"));
 };
-const removeDist = () => {
-  return del("dist");
+const removeDocs = () => {
+  return del("docs");
 };
 
 //compile
@@ -65,7 +65,7 @@ const compileStyle = () => {
 const compile = gulp.parallel(compileScript, compileStyle);
 
 const build = gulp.series(
-  removeDist,
+  removeDocs,
   compile,
   gulp.parallel(buildMarkup, buildScript, buildStyle, buildFonts, buildImage)
 );
