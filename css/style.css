@@ -691,4 +691,128 @@ body {
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/QHD8zigcbDB8aPfIoaupKOvvDin1pK8aKteLpeZ5c0A.ttf) format("truetype");
 }
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7e0000;
+  z-index: 2;
+}
+
+.header__body {
+  margin: 10px 0;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.header__list li {
+  list-style: none;
+  margin: 0 0 0 40px;
+}
+
+.header__list li:first-child {
+  margin: 0;
+}
+
+.header__link {
+  font-size: 18px;
+}
+
+.header__link a {
+  text-decoration: none;
+}
+
+.header__title {
+  z-index: 2;
+}
+
+.header-button {
+  z-index: 2;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__link {
+    font-size: 14px;
+  }
+  .header__list li {
+    margin-left: 20px;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    padding: 70px 10px 20px 10px;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0 0 20px 0;
+  }
+  .header__list li:first-child {
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

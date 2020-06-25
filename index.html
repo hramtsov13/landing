@@ -11,19 +11,20 @@
 
   <body>
     <section class="intro">
+      <!--
       <header class="intro__header">
         <div class="container-sm">
           <div class="row">
             <div class="col-sm-4 header-margin">
               <ul class="header__nav">
                 <li>
-                  <a href="#popup">Home</a>
+                  <a href="#popup" class="popup-link">Home</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -39,7 +40,7 @@
           </div>  
         </div>
       </header>
-        
+      -->
       <article class="intro__main">
         <div class="container-sm">
           <div class="row">
@@ -68,7 +69,7 @@
 
     <!--Second section-->
 
-    <div class="perk">
+    <div id="about" class="perk">
       <section class="container-sm">
         <article class="perk__main">
           <div class="row">
@@ -221,7 +222,7 @@
 
     <!--Footer section-->
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="footer__top">
         <div class="container-sm">
           <div class="row">
@@ -243,13 +244,13 @@
               <div class="col-md-6 col-sm-12">
                 <ul class="footer__nav">
                   <li>
-                    <a href="#">Home</a>
+                    <a href="##">Home</a>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -302,7 +303,7 @@
           <section class="container-sm">
             <div class="row">
               <div class="col-md-6 col-sm-12">
-                <a href="#" class="popup__close"><img src="./img/btn-close.png" alt="close button"></a>
+                <a href="##" class="popup__close close-popup"><img src="./img/btn-close.png" alt="close button"></a>
                 <h3 class="modal__heading heading">
                   Light, Fast & Powerful Dick
                 </h3>
@@ -363,6 +364,38 @@
         </div>
       </div>
     </div>
+    
+    <header class="header">
+      <div class="container-sm">
+        <div class="row">
+          <div class="header__body">
+            <div class="col-sm-4 col-md-4">
+              <nav class="header__menu">
+                <ul class="header__list">
+                  <li class="header__link"><a href="">Home</a></li>
+                  <li class="header__link"><a href="">About</a></li>
+                  <li class="header__link"><a href="">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header__burger">
+                <span></span>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <span class="header__title">Landie</span>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <button class="header__button">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <script src="./script.js"></script>
   </body>
 </html>
+
+<!--Burger header-->
+
+   
